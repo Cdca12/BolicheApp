@@ -1,27 +1,46 @@
 # BolicheApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 11.0.2.
+
+## Instalación
+
+Ejecuta `npm install` en la carpeta del proyecto.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ejecuta `ng serve` para ejecutarlo en un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si modificas cualquier archivo del proyecto. 
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Generar un nuevo componente
+
+Ejecuta `ng generate component component-name` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+### Añadir una clase con pruebas unitarias
+
+Ejecuta `ng generate class folder-name\className` para añadir una nueva clase con pruebas unitarias con Jasmine. Esto te generará una carpeta con 2 archivos .ts.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Ejecuta `ng build` para hacer un build al proyecto. Los artefactos en build se guardarán en la carpeta `dist/`. Usa la bandera `--prod` para realizar un build de tipo productivo.
 
-## Running unit tests
+## Ejecutar pruebas unitarias (Unit tests)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ejecuta `ng test` para ejecutar las pruebas unitarias vía [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Ejecutar pruebas extremo-a-extremo (End-to-end test)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Ejecuta `ng e2e` para ejecutar las pruebas de extremo-a-extremo via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Ayuda
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para obtener más ayuda en el uso de Angular CLI usa `ng help` o consulta la página de [Angular CLI Overview and Command Reference](https://angular.io/cli).
+
+## Troubleshooting
+
+### Habilitar la ejecución de scripts para Powershell
+En algunas ocasiones nos podemos encontrar con que no podemos ejecutar los comandos con `ng` debido a que en el sistema está deshabilitada la ejecución de scripts. 
+
+Para corregir esto, tenemos que abrir el Windows PowerShell como administrador y ejecutamos el comando `Get-ExecutionPolicy`, nos tendría que devolver «Unrestricted» o lo que es lo mismo «Restringido». Para cambiar esta configuración basta con ejecutar el comando `Set-ExecutionPolicy Unrestricted`.
+
+En ese momento ya se pueden ejecutar los scripts sin problemas.
