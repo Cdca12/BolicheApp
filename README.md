@@ -1,3 +1,11 @@
+<p align="center">
+  <a href="https://www.culiacan.tecnm.mx/">
+    <img src="/src/assets/Jasmine + Karma Logo.png" width="600" title="Angular con Jasmine y Karma">
+  </a>
+</p>
+
+[![license](https://img.shields.io/badge/license-MIT-red)](LICENSE.md)
+
 # BolicheApp
 
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 11.0.2.
